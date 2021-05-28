@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        #wrapper { background-color:bisque;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 2em;}
+        </style>
+    </head>
+<body>
+<main>
+<div id = "wrapper">
+<h2>Madlibs</h2>
+<img src = "mad-libs-app-original.png" width="20%" height="auto">
+<p>Please enter the following information:</p>
+<span id="inputs" >
+<input id="pluralNoun" placeholder="a plural noun" type="text" ><br>
+<input id="noun1" placeholder="a noun" type="text"><br>
+<input id="noun2" placeholder="another noun" type="text"><br>
+<input id="song" placeholder="song" type="text"><br>
+<input id="verb" placeholder="verb" type="text"><br>
+</span>
+<br>
+<button type="button" onclick="createMessage()">Submit</button>
+<br>
+<br>
+<div id="result" style="display:none">
+    Learning to drive is a tricky process.<br>
+    <ol>
+    <li>
+        Keep two <span id="word1">feet</span> on the steering wheel at all times.
+    </li>
+    <br>
+    <li>
+        Step on the <span id="word2">dog</span> to speed up and the <span id="word3">cat</span> to slow down.  
+    </li>
+    <br>
+    <li>
+        Sing <span id="word4">Row,row your boat</span> if you see a truck.  
+    </li>
+    <br>
+    <li>
+        <span id="word5">Holler</span> if you see a Deer Crossing sign.  
+    </li>
+    </ol>
+    <br>
+    <button type="button" onclick="goAgain()">Go Again</button>
+</div>
+
+</main>
+<script src="madlibs.js"></script>
+</body>
+</html> 
+
